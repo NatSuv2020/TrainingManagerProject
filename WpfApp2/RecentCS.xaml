@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp2.RecentCS"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="RecentCS" Height="450" Width="800" ResizeMode="NoResize">
+
+
+    <Grid>
+        <ScrollViewer Margin="387,38,42,61">
+            <TextBlock Background="DarkSeaGreen"  Name="output"  TextWrapping="Wrap" Height="327" Width="auto"/>
+        </ScrollViewer>
+        <Button Background="AliceBlue" Name="go" Content="Click" HorizontalAlignment="Left" Margin="66,214,0,0" VerticalAlignment="Top" Height="51" Width="113" Click="go_Click"/>
+        <TextBlock FontSize="20" HorizontalAlignment="Left" Margin="64,67,0,0" Text="Last Trainings" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="132"/>
+        <TextBox Background="AliceBlue" Name="input" HorizontalAlignment="Left" Margin="62,132,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Height="39"/>
+
+    </Grid>
+
+</Window>

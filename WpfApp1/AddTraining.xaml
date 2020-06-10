@@ -1,0 +1,65 @@
+﻿<Window x:Class="WpfApp1.AddTraining"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="AddTraining" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <TextBlock   VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" RenderTransformOrigin="3.313,1.125" Grid.Column="2" Margin="91,53,90,67">TrainingStart</TextBlock>
+        <DatePicker Name="trainingDate" VerticalAlignment="Center" Grid.Column="0"  SelectedDateFormat="Long" Height="27" Margin="22,60,16,53"/>
+        <Grid Grid.Column="0" Grid.Row="2">
+            <Label HorizontalAlignment="Right" Margin="0,-142,90,143" >Training Type</Label>
+            <ComboBox x:Name="trainingType" Margin="4,-100,6,199" RenderTransformOrigin="0.492,2.55">
+                <ComboBoxItem Height="21" Margin="0,0,8,0">
+                    <TextBlock>Recovery</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock>Endurance</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock>Interval</TextBlock>
+                </ComboBoxItem>
+            </ComboBox>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="2">
+            <Label HorizontalAlignment="Right" Margin="0,-142,101,143" >Bike Type</Label>
+            <ComboBox x:Name="bikeType" Margin="8,-100,2,199" RenderTransformOrigin="0.492,2.55">
+                <ComboBoxItem Height="21" Margin="0,0,8,0">
+                    <TextBlock>RacingBike</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock>IndoorBike</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock>CityBike</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock>MountainBike</TextBlock>
+                </ComboBoxItem>
+
+            </ComboBox>
+
+        </Grid>
+        <TextBlock Grid.Row="1" Grid.Column="2" TextAlignment="Center" Margin="-1,20,1,-20">Average Duration</TextBlock>
+        <TextBox Background="LightGray" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="1" TextWrapping="Wrap" Text="" Margin="55,61,49,44" Width="160" Height="35" />
+        <TextBlock Grid.Row="2" Grid.Column="0" TextAlignment="Center" Margin="-1,20,1,-20"> Length</TextBlock>
+        <TextBox Background="LightGray" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="km plz" Margin="55,61,49,46" Width="160" Height="33" />
+        <TextBlock Grid.Row="2" Grid.Column="1" TextAlignment="Center" Margin="-1,20,1,-20">Training Duration</TextBlock>
+        <TextBox Background="LightGray" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" TextWrapping="Wrap" Text="" Margin="55,61,49,44" Width="160" Height="35" />
+        <TextBlock Grid.Row="2" Grid.Column="2" TextAlignment="Center" Margin="-1,20,1,-20">Average Speed</TextBlock>
+        <TextBox Background="LightGray" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="2" TextWrapping="Wrap" Text="" Margin="55,61,49,44" Width="160" Height="35" />
+
+    </Grid>
+</Window>
